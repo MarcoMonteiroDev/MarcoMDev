@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    width: 100vw;
+    height: 400px;
+    background-color: aqua;
+    display: flex;
+    justify-content: end;
+}
+
+.containerbotao{
+    width: 100px;
+    height: 80px;
+    position: relative;
+}
+
+.botaosuperior, .botaoinferior{
+    font-size: 1.3em;
+    font-family:"Montserrat",sans-serif;
+    border: none;
+}
+
+.botaosuperior{
+    background: linear-gradient(130deg,rgb(55, 0, 255),rgb(183, 0, 255));
+    color: white;
+    mask: url("../nature-sprite.png");
+    -webkit-mask: url("../nature-sprite.png");
+    mask-size: 2300% 100%;
+    mask-position: 0 0;
+    -webkit-mask-size: 2300% 100%;
+    z-index: 1;
+    position: relative;
+}
+
+.botaoinferior{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    
+}
+@keyframes mascara {
+    to{
+        mask-position: 100% 0;
+    }
+}
+@keyframes mascarainverse {
+    from{
+        mask-position: 100% 0;
+    }to{
+        mask-position: 0% 0;
+    }
+}
