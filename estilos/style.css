@@ -3,37 +3,63 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat";
 }
 
 body{
-    background-color: black;
+    background-color: #101728;
 }
 
 header{
     width: 100vw;
-    height: 400px;
-    background-color: aqua;
+    height: 300px;
+    background-color: #101728;
     display: flex;
-    justify-content: end;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid darkblue;
+}
+
+header > h1 {
+    width: 100px;
+    color: white;
+    font-size: 4em;
+    font-weight: 900;
+    margin: 0px 30px;
+}
+
+nav{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+    align-items: center;
+}
+
+main{
+    margin: 40px 30px;
+    padding: 10px;
 }
 
 .containerbotao{
-    width: 100px;
-    height: 80px;
+    margin: 0px 7px;
     position: relative;
 }
 
 .botaosuperior, .botaoinferior{
-    font-size: 1.3em;
+    font-size: 2.0em;
     font-family:"Montserrat",sans-serif;
     border: none;
+    text-decoration: none;
+    border-radius: 25px;
 }
 
 .botaosuperior{
-    background: linear-gradient(130deg,rgb(55, 0, 255),rgb(183, 0, 255));
+    padding: 20px 40px;
+    background: linear-gradient(130deg,rgb(55, 0, 255),darkmagenta);
     color: white;
-    mask: url("../nature-sprite.png");
-    -webkit-mask: url("../nature-sprite.png");
+    mask: url("../imagens/nature-sprite.png");
+    -webkit-mask: url("../imagens/nature-sprite.png");
     mask-size: 2300% 100%;
     mask-position: 0 0;
     -webkit-mask-size: 2300% 100%;
@@ -42,12 +68,51 @@ header{
 }
 
 .botaoinferior{
+    padding: 19px 39px;
+    background-color: white;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -19px;
+    left: 1px;
     z-index: 0;
     
 }
+
+#topmain{
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+#tituloqse{
+    color: aliceblue;
+    font-size: 2em;
+}
+
+#containerfotoperfil{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    background-image: radial-gradient(circle,#191754 ,#2513aa,#101728,#10172876);
+    box-shadow: 0px 0px 20px #101728;
+}
+
+#fotoperfil{
+    width: 180px;
+    border-radius: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}   
+
+#quemsoueu{
+    color: white;
+}
+#quemsoueu > p{
+    margin: 10px;
+}
+
 @keyframes mascara {
     to{
         mask-position: 100% 0;
