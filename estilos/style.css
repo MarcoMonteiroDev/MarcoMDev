@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: #101728;
+    background-color: rgb(16, 23, 40);
 }
 
 header{
@@ -77,14 +77,14 @@ main{
     
 }
 
-#topmain{
+.qse{
     margin-bottom: 20px;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
 }
 
-#tituloqse{
+.tituloqse{
     color: aliceblue;
     font-size: 2em;
 }
@@ -106,11 +106,34 @@ main{
     transform: translate(-50%, -50%);
 }   
 
-#quemsoueu{
+.conteudoqse{
     color: white;
 }
-#quemsoueu > p{
+
+.conteudoqse > p{
     margin: 10px;
+}
+
+#caixas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.caixa{
+    width: 30%;
+    height: 200px;
+    margin: 20px 10px;
+    color: white;
+    background-image: linear-gradient(90deg,#171844,#111c80);
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+
+
+    border-radius: 50px;
+    text-align: center;
 }
 
 @keyframes mascara {
